@@ -1,0 +1,129 @@
+@import url("base.css");
+body{
+    padding: 20px;
+    background: #000;
+}
+.title{
+    /*display: block;*/
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+    margin: 0 0 20px;
+    color: #fff;
+}
+.topBig{
+    width: 100%;
+    height: 500px;
+}
+.topBig>div.topbigright{
+    width: 20px;
+    height: 40px;
+    background: pink;
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 0px;
+}
+.topBig>div.topbigleft{
+    width: 20px;
+    height: 40px;
+    background: pink;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 0px;
+}
+.topImg{
+    width: 1200px;
+    height: 100%;
+    background: red;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.blo{
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: all 1s;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.active{
+    display: block;
+}
+.left{
+    display: block;
+    transform: translateX(-100%);
+}
+
+.right{
+    display: block;
+    transform: translateX(100%);
+}
+.topImg>li>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bottomBig{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+
+}
+.bottomImg{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    background: red;
+}
+.leftImg{
+    width: 300px;
+    height: 300px;
+    background: yellow;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.leftImg>li{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:0;
+    left: 0px;
+}
+.leftImg>li>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rightImg{
+    width: 880px;
+    height: 300px;
+    float: right;
+    position: relative;
+}
+.rightImg>li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0px;
+}
+.rightImg>li>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}

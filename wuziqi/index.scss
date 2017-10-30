@@ -1,0 +1,163 @@
+@mixin auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin  center{
+  position: absolute;
+  bottom: 0;
+  top:0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@mixin  centerS($w,$h){
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -$w/2;
+  margin-left: -$h/2;
+}
+@mixin circle{
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@mixin borderR($r){
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  border-radius: $r;
+}
+$bg:'../bg.png';
+
+$width: 600px;
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  overflow: hidden;
+  background: #EDDA2D;
+}
+.qipan{
+  width: $width;
+  height: $width;
+  @include center;
+  overflow: hidden;
+  background: #ACED14;
+
+  .qizi{
+    width: $width/15-10px;
+    height: $width/15-10px;
+    float: left;
+    margin: 5px;
+    z-index: 999;
+    @include circle;
+  }
+  .qizi.hei{
+    background: #000;
+  }
+  .qizi.bai{
+    background: #fff;
+  }
+  .hang{
+    width: $width - $width/15;
+    height: 1px;
+    animation:hang  .5s ease ;
+    background: #000;
+    position: absolute;
+    left: $width/15/2;
+
+  }
+  @for $i from 0 through 14{
+    div:nth-of-type(#{$i+1}){
+      top: $width/30+$i*$width/15;
+
+    }
+  }
+    //棋子
+@for $i from 0 through 14{
+  li:nth-of-type(#{$i+1}){
+  top: $width/30+$i*$width/15;
+
+}
+}
+  .shu{
+    width: 1px;
+    height:$width - $width/15 ;
+    background: #000;
+    position: absolute;
+    top:$width/15/2;
+    animation:shu 0.5s ease ;
+
+  }
+  @for $i from 0 through 14 {
+    span:nth-of-type(#{$i+1}) {
+      left: $width/30+$i*$width/15;
+
+    }
+  }
+  //五个棋子
+  i{
+    width: $width/60;
+    height: $width/60;
+    background: #000;
+    border-radius: 50%;
+    transform: translate3d(-50%,-50%,0);
+    position: absolute;
+    animation:diaoluo  2s ease ;
+
+    &:nth-of-type(1){
+      top:3.5*$width/15;
+      left: 3.5*$width/15;
+    }
+    &:nth-of-type(2){
+      top:3.5*$width/15;
+      left: 11.5*$width/15;
+    }
+    &:nth-of-type(3){
+      top:7.5*$width/15;
+      left: 7.5*$width/15;
+    } &:nth-of-type(4){
+        top:11.5*$width/15;
+        left: 3.5*$width/15;
+      }
+    &:nth-of-type(5){
+      top:11.5*$width/15;
+      left: 11.5*$width/15;
+    }
+
+  }
+
+}
+@keyframes diaoluo {
+  0%{
+    transform: translate3d(0,-800px,0);
+  }
+  100%{
+    transform: translate3d(-50%,-50%,0);
+  }
+}
+
+@keyframes hang {
+  0% {
+    transform: translate3d(0px, -800px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes shu {
+  0% {
+    transform: translate3d(-800px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+

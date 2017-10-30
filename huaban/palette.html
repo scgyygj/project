@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>画板</title>
+    <link rel="stylesheet" href="palette.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body>
+<main>
+<div class="tool">
+    <ul>
+        <li id="backs" class="iconfont icon-chexiao1" ></li>
+        <li id="eraser" class="iconfont icon-xiangpi" ></li>
+        <li id="clips" class="iconfont icon-caijian" ></li>
+        <li id="news" class="iconfont icon-add" ></li>
+        <li id="save" class="iconfont icon-baocun" ><a href="" id="save1"></a></li>
+        <hr style=" width:120px ; height:1px ;margin:20px 0px;background: #000 ;border: none">
+        <li id="line" class="iconfont icon-zhixian tools" active="true"></li>
+        <li id="dashes" class=" iconfont icon-xuxian tools" ></li>
+        <li id="square" class="iconfont icon-juxing tools" ></li>
+        <li id="polys" class="iconfont  icon-duobianxing tools" ></li>
+        <li id="polyJ" class="iconfont icon-wujiaoxing tools" ></li>
+        <li id="circle" class="iconfont icon-yuan tools" ></li>
+        <li id="pencil" class=" iconfont icon-pan_icon tools" ></li>
+        <li id="text" class="iconfont icon-wenzi"></li>
+        <hr style=" width:120px ; height:1px ;margin:20px 0px;background:  #000;border: none">
+        <li id="fill" class="iconfont  icon-tianchong1" ><input type="color" width="100" height="100" class="fillcolor"></li>
+        <li id="stroke" class="iconfont icon-miaobian" ><input type="color" width="100" height="100" class="strokecolor"></li>
+    </ul>
+</div>
+<div class="right">
+    <div class="top">
+        <button>反向</button>
+        <button>去色</button>
+        <button>清空</button>
+    </div>
+    <div class="bottom">
+    <div class="eraser"></div>
+    <div class="clip"></div>
+    <div class="opacity"></div>
+    <canvas width="1100px" height="550px"></canvas>
+    </div>
+</div>
+
+</main>
+</body>
+<script src="palette.js"></script>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,384 @@
+@import url('base.css');
+body{
+    /*background:hotpink;*/
+    /*scroll:no;*/
+    width: 100%;
+    height: 100%;
+    /*background: url('../img/aiqing1.jpg');*/
+    position: relative;
+    overflow: hidden;
+}
+/*侧导航开始*/
+.navmin{
+    width: 50px;
+    height: 50px;
+    background:rgba(255,255,255,0.8);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #7b7b7d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 1;
+}
+.navopacity{
+    width:160px;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    left:0px;
+    z-index: 999;
+}
+aside{
+    width:160px;
+    height: 100%;
+    background:rgba(255,255,255,0.8);
+    position: fixed;
+    top: 0;
+    left:-160px;
+    z-index: 999;
+}
+.nav>div{
+    width: 160px;
+    height: 200px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.touxiang input{
+    border: none;
+    background: none;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.touxiang{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.touxiang>a{
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.touxiang>a>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.nav>ul{
+    width: auto;
+    height: auto;
+    margin-top: 60px;
+}
+.nav>ul>li{
+    width: 100%;
+    height: 53px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    transition: all 1s;
+    position: relative;
+}
+.nav>ul>li:hover{
+    background: skyblue;
+}
+.nav>ul li>a>span{
+    font-size: 14px;
+    padding-left: 15px;
+    line-height:53px;
+}
+.nav>ul li>a{
+    color: #333;
+}
+.nav>ul li>a>div{
+    width: 20px;
+    height: 20px;
+    background: red;
+    float: left;
+    margin-right: 10px;
+    margin-top: 16px;
+
+}
+.yqc{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: -50%;
+    left: 160px;
+    display: none;
+    transition: all 0.5s;
+}
+.yqc>li{
+    width: 100%;
+    height: 30px;
+    background: #00b5ec;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+}
+/*侧导航结束*/
+/*banner开始*/
+.bannerBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+}
+.banneropacity{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 99999;
+}
+.banneropacity>div{
+    width: 700px;
+    height: 500px;
+    /*background: pink;*/
+    position: absolute;
+    top: 50px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid powderblue;
+    border-bottom: 1px solid pink;
+}
+.banneropacity>div h1{
+    font-size: 60px;
+    text-align: center;
+    line-height: 200px;
+    color: rgba(255,255,255,0.8);
+}
+.banneropacity>div>hr{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    background: #fff;
+}
+.banneropacity>div>span{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-top: 100px;
+}
+.banneropacity>div>p{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+.bannerImg{
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+.bannerImg li>a{
+    display: block;
+}
+.bannerImg li{
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bannerImg li:first-child{
+    left:0;
+}
+.bannerImg li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bannerImg li a>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bannerDian{
+    width: auto;
+    height: 115px;
+    position: fixed;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    z-index: 999999999;
+}
+.bannerDian li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background: #888888;
+    transition: all 0.5s;
+    /*border:2px solid rgba(0,0,0,0);*/
+}
+.bannerDian li:hover{
+    width: 12px;
+    height: 12px;
+    background: none;
+    border:2px solid rgba(204,204,204,1);
+}
+/*banner结束*/
+/*友情篇开始*/
+.youqingbg{
+    display: block;
+    width: 100%;
+    height:700px;
+    background:url("../img/youbg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    position: relative;
+}
+.youqingzhezhao{
+    width: 100%;
+    height: 700px;
+    background: rgba(220,65,65,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.youqing{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    width: auto;
+    height: auto;
+}
+.youqing>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.xian1{
+    width: 500px;
+    /*background: #9ee5ff;*/
+    border: 2px dashed #54887f;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 244px;
+    top: 312px;
+}
+/*友情篇结束*/
+/*亲情篇开始*/
+.qingbg{
+    display: block;
+    width: 100%;
+    height: 600px;
+    background:url("../img/qinqingbg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    position: relative;
+}
+.qinqingzhezhao{
+    width: 100%;
+    height: 600px;
+    background: rgba(37,23,255,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.qinqing{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    width: auto;
+    height: auto;
+}
+.qinqing>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.xian2{
+    width: 160px;
+    border: 2px dashed #54887f;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 68px;
+    top: -55px;
+}
+.xian3{
+    width: 318px;
+    /*background: #9ee5ff;*/
+    border: 2px dashed #54887f;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -191px;
+    bottom: -112px;
+}
+/*亲情篇结束*/
+/*爱情篇开始*/
+.aibg{
+    display: block;
+    width: 100%;
+    height: 600px;
+    background:url("../img/qinbg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    position: relative;
+}
+.aiqingzhezhao{
+    width: 100%;
+    height: 600px;
+    background: rgba(37,255,89,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.aiqing{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    width: auto;
+    height: auto;
+}
+.aiqing>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.xian4{
+    width: 220px;
+    border: 2px dashed #54887f;
+    transform: rotate(-29deg);
+    position: absolute;
+    left: 230px;
+    top: -52px;
+}
+
+/*爱情篇结束*/
+ /*上下滑动*/
+.topbottom{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    opacity: 0;
+    transition: all 2s;
+}
+.topbottom:first-of-type{
+    opacity: 1;
+}

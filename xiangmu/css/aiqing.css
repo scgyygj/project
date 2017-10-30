@@ -1,0 +1,189 @@
+@import url('base.css');
+body{
+    width: auto;
+    height: 750px;
+    background: url('../img/aiqingbg (2).jpg') no-repeat center/cover;
+}
+.opc{
+    width: 100%;
+    height: 750px;
+    background: rgba(255,255,255,0.6);
+}
+h1{
+    font-size: 30px;
+    color: #c7254e;
+    text-align: center;
+    line-height: 60px;
+}
+main{
+    width: 1200px;
+    /*border: 4px solid #fff;*/
+    padding: 2px 6px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.neirong{
+    width: 692px;
+    height: 590px;
+    float: right;
+    background:url('../img/aq.jpg'),no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+    transition: all .1s;
+}
+.black{
+    width: 496px;
+    height: 590px;
+    float: left;
+    background: #000;
+    position: relative;
+}
+.white{
+    width: 692px;
+    height: 590px;
+    float: right;
+    /*background: #fff;*/
+    position: absolute;
+    top:2px;
+    right: 2px;
+    display: block;
+    opacity: 0;
+}
+.white:first-child{
+    opacity: 1;
+}
+.balckTop{
+    width: 200px;
+    height:70px;
+    font-size: 30px;
+    color:#fff;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    border: 2px solid #cccccc;
+    border-right: none;
+    z-index: 999999999;
+}
+.whiteTop{
+    width:250px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    border: 2px solid #cccccc;
+    border-left: none;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    line-height: 70px;
+}
+.black>ul{
+    width: 100%;
+    height: auto;
+    margin-top: 250px;
+    padding: 10px;
+
+}
+.black>ul li{
+    margin: 0 auto;
+    /*width: 150px;*/
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #fff;
+
+    /*text-align: center;*/
+    line-height: 50px;
+    padding-left: 180px;
+    cursor: pointer;
+}
+.black>ul li>div{
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    margin-right: 20px;
+    line-height: 20px;
+    color: #E8ACAA;
+    margin-top: 15px;
+    float: left;
+}
+.white>h3{
+    margin-top: 120px;
+    padding: 0px 30px;
+}
+.white>span{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555555;
+    line-height: 30px;
+}
+.whiteImg{
+    width: 600px;
+    height: 320px;
+    margin: 0 auto;
+    border: 1px solid #cccccc;
+    padding: 2px;
+    margin-top: 20px;
+}
+.whiteImg>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.white>button{
+    width: 150px;
+    height: 40px;
+    background: #84ff00;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.white>button:focus{
+    outline: none;
+}
+/*导航*/
+.topdaohang{
+    width: auto;
+    height: 50px;
+    background: #000;
+    /*display: flex;*/
+    /*position: fixed;*/
+    padding: 0px 100px;
+    /*top:0px;*/
+    /*left: 0px;*/
+    /*right: 0px;*/
+    /*margin: 0 auto;*/
+    z-index: 9999;
+}
+.topdaohang>li{
+    padding: 0px 30px;
+    float: right;
+    height: 100%;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+}
+.topdaohang>li>a{
+    color: #fff;
+}
+.topdaohang>li:hover{
+    background:#fff;
+}.topdaohang>li:hover a{
+    color: #000;
+ }
+
